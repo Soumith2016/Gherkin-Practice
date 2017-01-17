@@ -1,0 +1,5 @@
+Scenario: Searching Lead ID with access to Lead Search ES
+    Given Lead ID "1235689"
+    And Lead ID contains coupon code data
+    When we search for Lead results for above lead id
+    Then we should always see Customer (Coupon) Data
